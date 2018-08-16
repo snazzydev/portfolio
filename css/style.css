@@ -74,7 +74,8 @@ h6 {
   font-size: 3.7rem;
   text-transform: uppercase;
   color: #333;
-  font-weight: 700; }
+  font-weight: 700;
+  letter-spacing: 3px; }
   .secondary-heading--white {
     color: #fff; }
 
@@ -467,4 +468,22 @@ h6 {
 
 .section-mindset {
   background-color: #eee;
-  padding: 25rem 0; }
+  padding: 15rem 0; }
+
+.mindset-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.mindset-image {
+  height: 30rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .mindset-image--1 {
+    margin-left: 20rem; }
+  .mindset-image--3 {
+    margin-left: 20rem; }
