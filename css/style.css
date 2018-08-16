@@ -393,6 +393,10 @@ h6 {
   -webkit-transition-delay: 0.4s;
   transition-delay: 0.4s; }
 
+.nav-item:nth-child(5) {
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s; }
+
 .footer {
   background-color: #f7f7f7;
   background-image: linear-gradient(60deg, #29323c, rgba(86, 67, 250, 0.9)), url(../img/ver7.png);
