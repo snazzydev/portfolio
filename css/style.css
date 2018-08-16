@@ -400,7 +400,7 @@ h6 {
 .footer {
   background-color: #f7f7f7;
   background-image: linear-gradient(60deg, #29323c, rgba(86, 67, 250, 0.9)), url(../img/ver7.png);
-  background-position: center;
+  background-position: bottom;
   text-align: center;
   text-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4); }
   .footer__heading {
@@ -408,6 +408,8 @@ h6 {
     font-size: 2.3rem;
     margin-bottom: 2rem;
     font-weight: 600; }
+  .footer__logo {
+    margin: 4rem 0; }
   .footer__img {
     width: 8rem;
     margin: 0 auto; }
