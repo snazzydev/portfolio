@@ -95,11 +95,15 @@ h6 {
   text-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
   font-size: 3.7rem;
   text-transform: uppercase;
+  padding: 2rem 0;
   color: #333;
   font-weight: 700;
-  letter-spacing: 3px; }
+  letter-spacing: 3px;
+  display: inline-block;
+  border-bottom: 3px solid #333; }
   .secondary-heading--white {
-    color: #fff; }
+    color: #fff;
+    border-bottom: 3px solid #fff; }
 
 .tertiary-heading {
   font-size: 2.2rem;
@@ -511,7 +515,7 @@ h6 {
 
 .section-work {
   background-color: #f7f7f7;
-  padding: 15rem 0; }
+  padding: 10rem 0; }
 
 .section-mindset {
   background-color: #eee;
