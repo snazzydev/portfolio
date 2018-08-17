@@ -243,7 +243,9 @@ h6 {
     display: inline-block;
     -webkit-transform: skewX(-15deg);
     transform: skewX(-15deg);
-    border-radius: 5px; }
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); }
   .panel__text {
     font-family: "Ubuntu", sans-serif;
     padding: 1.5rem 3rem;
