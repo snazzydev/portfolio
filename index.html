@@ -16,7 +16,7 @@
   <title>Snazzy Dev</title>
 </head>
 
-<body>
+<body id="home">
 
   <!-- NAVIGATION -->
   <div class="menu-bg">&nbsp;</div>
@@ -29,19 +29,19 @@
   <div class="menu">
     <ul class="menu-nav">
       <li class="nav-item">
-        <a href="#" class="nav-link">Home</a>
+        <a href="#home" class="nav-link">Home</a>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link">About</a>
+        <a href="#about" class="nav-link">About</a>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link">Tech</a>
+        <a href="#tech" class="nav-link">Tech</a>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link">Work</a>
+        <a href="#work" class="nav-link">Work</a>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link">Contact</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </li>
     </ul>
   </div>
@@ -71,7 +71,7 @@
 
     <!-- ABOUT SECTION -->
 
-    <section class="section-about">
+    <section class="section-about" id="about">
       <div class="container">
         <div class="columns">
           <div class="column is-two-thirds">
@@ -92,7 +92,7 @@
 
     <!-- TECH SECTION -->
 
-    <section class="section-tech">
+    <section class="section-tech" id="tech">
 
       <div class="container">
         <div class="u-margin-bottom-large u-center-text">
@@ -154,7 +154,7 @@
 
     <!-- WORK SECTION -->
 
-    <section class="section-work">
+    <section class="section-work" id="work">
       <div class="u-margin-bottom-large u-center-text">
         <h2 class="secondary-heading">my work</h2>
       </div>
@@ -319,9 +319,11 @@
 
   <!-- FOOTER -->
 
-  <footer class="footer">
+  <footer class="footer" id="contact">
     <div class="footer__logo u-margin-bottom-large">
-      <img src="img/logo.png" alt="Logo">
+      <a href="#home">
+        <img src="img/logo.png" alt="Logo">
+      </a>
     </div>
     <div class="container">
       <div class="columns">
@@ -329,7 +331,7 @@
           <div class="">
             <div class="footer__img">
               <img src="img/up.png" alt="Upwork Logo">
-              <a href="#" class="footer__link">UpWork</a>
+              <a href="https://www.upwork.com/freelancers/~01db55e66572c6c994" target="_blank" class="footer__link">UpWork</a>
             </div>
           </div>
         </div>
