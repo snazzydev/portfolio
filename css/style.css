@@ -154,6 +154,9 @@ h6 {
 .u-margin-top-huge {
   margin-top: 10rem !important; }
 
+.u-margin-bottom-test {
+  margin-bottom: 30rem !important; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -230,7 +233,9 @@ h6 {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   -webkit-box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.2);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
   .panel:hover {
     -webkit-transform: translateY(-1rem);
     transform: translateY(-1rem); }
@@ -456,6 +461,7 @@ h6 {
   background-color: #f7f7f7;
   background-image: linear-gradient(60deg, #29323c, rgba(86, 67, 250, 0.9)), url(../img/ver7.png);
   background-position: bottom;
+  background-attachment: fixed;
   text-align: center;
   text-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
   margin-top: -10rem;
@@ -481,7 +487,11 @@ h6 {
     font-weight: 600; }
   .footer__img {
     width: 8rem;
-    margin: 0 auto; }
+    margin: 0 auto;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s; }
+    .footer__img:hover {
+      opacity: 0.7; }
   .footer__icon {
     font-size: 4rem;
     margin: 0 1rem; }
@@ -511,6 +521,7 @@ h6 {
   background-image: linear-gradient(60deg, #29323c, rgba(86, 67, 250, 0.8)), url(../img/hero_opt.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh); }
   @media (max-width: 37.5em) {
@@ -561,7 +572,8 @@ h6 {
   padding: 10rem 0;
   background-image: linear-gradient(60deg, #29323c, rgba(86, 67, 250, 0.9)), url(../img/ver7.png);
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  background-attachment: fixed; }
 
 .section-work {
   background-color: #f7f7f7;
