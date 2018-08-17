@@ -382,10 +382,14 @@ h6 {
     margin: 0;
     float: right;
     padding: 0;
-    background-color: #333;
+    background-color: #29323c;
     list-style: none;
     -webkit-transform: translateX(60rem);
     transform: translateX(60rem);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-box-shadow: -1rem 0rem 6rem rgba(0, 0, 0, 0.4);
+    box-shadow: -1rem 0rem 6rem rgba(0, 0, 0, 0.4);
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease; }
     @media (max-width: 1200px) {
