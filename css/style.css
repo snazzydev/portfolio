@@ -160,13 +160,15 @@ h6 {
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding: 1.5rem 6rem;
   display: inline-block;
   border-radius: 10px;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  position: relative; }
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
 
 .btn:hover {
   -webkit-transform: translateY(-5px);
