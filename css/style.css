@@ -13,6 +13,39 @@ $breakpoint choices:
 -  tab-land
 -  big-desktop
 */
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    opacity: 0; }
+  25% {
+    -webkit-transform: scale(1.35);
+    opacity: 0.1; }
+  50% {
+    -webkit-transform: scale(1.7);
+    opacity: 0.3; }
+  75% {
+    -webkit-transform: scale(2.05);
+    opacity: 0.5; }
+  100% {
+    -webkit-transform: scale(2.4);
+    opacity: 0; } }
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    opacity: 0; }
+  25% {
+    -webkit-transform: scale(1.35);
+    opacity: 0.1; }
+  50% {
+    -webkit-transform: scale(1.7);
+    opacity: 0.3; }
+  75% {
+    -webkit-transform: scale(2.05);
+    opacity: 0.5; }
+  100% {
+    -webkit-transform: scale(2.4);
+    opacity: 0; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -75,14 +108,6 @@ body {
 html {
   font-size: 62.5%; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Ubuntu", "Open Sans", sans-serif; }
-
 .primary-heading {
   text-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
   margin-bottom: 4rem; }
@@ -101,7 +126,7 @@ h6 {
         font-size: 3.2rem !important; } }
     @media (max-width: 37.5em) {
       .primary-heading--top {
-        font-size: 2rem !important; } }
+        font-size: 2.1rem !important; } }
     .primary-heading--top-1 {
       color: #7ed56f; }
     .primary-heading--top-2 {
@@ -111,6 +136,9 @@ h6 {
     font-size: 2.4rem;
     font-weight: 400;
     color: #eee; }
+    @media (max-width: 37.5em) {
+      .primary-heading--bottom {
+        display: none; } }
 
 .secondary-heading {
   text-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
@@ -147,6 +175,9 @@ h6 {
 
 .u-margin-bottom-large {
   margin-bottom: 8rem !important; }
+  @media (max-width: 37.5em) {
+    .u-margin-bottom-large {
+      margin-bottom: 2rem !important; } }
 
 .u-margin-top-large {
   margin-top: 8rem !important; }
@@ -169,6 +200,9 @@ h6 {
   position: relative;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
+  @media (max-width: 37.5em) {
+    .btn:link, .btn:visited {
+      font-size: 1.3rem; } }
 
 .btn:hover {
   -webkit-transform: translateY(-5px);
@@ -203,6 +237,11 @@ h6 {
   .btn--gradient-1:hover {
     color: #fff;
     background-color: #333; }
+
+@media (max-width: 37.5em) {
+  .header__text-box a {
+    width: 100%;
+    margin-bottom: 2rem; } }
 
 /*
 .btn::after {
@@ -322,7 +361,7 @@ h6 {
 .menu-bg {
   position: fixed;
   top: 2.2rem;
-  right: 2.8rem;
+  right: 2.7rem;
   width: 5.5rem;
   height: 5.5rem;
   background-color: #fff;
@@ -330,6 +369,11 @@ h6 {
   -webkit-box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.4);
   box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.4);
   z-index: 1000; }
+  @media (max-width: 37.5em) {
+    .menu-bg {
+      top: 2.4rem;
+      width: 5.7rem;
+      height: 5.7rem; } }
 
 .menu-btn {
   position: fixed;
@@ -405,6 +449,9 @@ h6 {
     @media (max-width: 56.25em) {
       .menu-nav {
         width: 50%; } }
+    @media (max-width: 37.5em) {
+      .menu-nav {
+        width: 40%; } }
     .menu-nav.show {
       -webkit-transform: translateX(0);
       transform: translateX(0); }
@@ -433,6 +480,9 @@ h6 {
     background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(50%, transparent), color-stop(50%, #fff));
     background-image: linear-gradient(90deg, transparent 0%, transparent 50%, #fff 50%);
     background-size: 250%; }
+    @media (max-width: 37.5em) {
+      .menu .nav-link {
+        font-size: 2.3rem; } }
     .menu .nav-link:hover {
       color: #333;
       background-position: 100%;
@@ -519,17 +569,18 @@ h6 {
 
 .header {
   position: relative;
-  height: 85vh;
+  height: 95vh;
   background-image: linear-gradient(60deg, #29323c, rgba(86, 67, 250, 0.8)), url(../img/hero_opt.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh); }
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh); }
   @media (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      height: 100vh; } }
   .header__logo {
     display: inline-block;
     margin-right: 1.5rem; }
@@ -563,11 +614,33 @@ h6 {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
+  .header__arrow {
+    margin-top: 15rem;
+    text-align: center;
+    color: #fff; }
+    @media (max-width: 37.5em) {
+      .header__arrow {
+        margin-top: 10rem; } }
+  .header__link:link, .header__link:visited {
+    color: #fff;
+    font-size: 3rem; }
+  .header__link:focus {
+    outline: none; }
+  .header__icon {
+    -webkit-animation: pulse 2s ease-in;
+    animation: pulse 2s ease-in;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite; }
 
 .section-about {
   background-color: #f7f7f7;
   padding: 20rem 0;
   margin-top: -10vh; }
+  .section-about:focus {
+    outline: none; }
+  @media (max-width: 37.5em) {
+    .section-about {
+      padding: 10rem 3rem; } }
 
 .section-tech {
   margin-top: -10vh;
@@ -580,10 +653,16 @@ h6 {
 .section-work {
   background-color: #f7f7f7;
   padding: 10rem 0; }
+  @media (max-width: 37.5em) {
+    .section-work {
+      padding: 8rem 0; } }
 
 .section-mindset {
   background-color: #eee;
   padding: 15rem 0; }
+  @media (max-width: 37.5em) {
+    .section-mindset {
+      padding: 8rem 2rem; } }
 
 .mindset-column {
   display: -webkit-box;
@@ -598,6 +677,10 @@ h6 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  @media (max-width: 37.5em) {
+    .mindset-image {
+      margin: 0 auto;
+      height: 20rem; } }
   .mindset-image--1 {
     margin-left: 20rem; }
     @media (max-width: 37.5em) {
@@ -605,9 +688,11 @@ h6 {
         margin: 0 auto; } }
   @media (max-width: 37.5em) {
     .mindset-image--2 {
-      margin: 0 auto; } }
+      margin: 0 auto;
+      display: none; } }
   .mindset-image--3 {
     margin-left: 20rem; }
     @media (max-width: 37.5em) {
       .mindset-image--3 {
-        margin: 0 auto; } }
+        margin: 0 auto;
+        margin-bottom: 3rem; } }
