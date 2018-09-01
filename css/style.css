@@ -307,8 +307,11 @@ html {
   .panel__image {
     background-size: cover;
     height: 25rem;
+    opacity: 0.5;
     -webkit-clip-path: ellipse(420px 160px at 50% 30%);
-    clip-path: ellipse(420px 160px at 50% 30%); }
+    clip-path: ellipse(420px 160px at 50% 30%);
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s; }
     @media (max-width: 1200px) {
       .panel__image {
         -webkit-clip-path: ellipse(1200px 160px at 50% 30%);
@@ -327,7 +330,7 @@ html {
       background-image: url(../img/wordpress.png);
       background-position: center; }
     .panel__image--6 {
-      background-image: url(../img/wordpress.png);
+      background-image: url(../img/community.png);
       background-position: center; }
   .panel__bg {
     background-color: #29323c;
@@ -357,6 +360,9 @@ html {
     font-size: 1.7rem;
     margin-bottom: 3rem;
     color: #29323c; }
+
+.panel:hover .panel__image {
+  opacity: 1; }
 
 .tech-box {
   font-family: "Ubuntu", sans-serif;
