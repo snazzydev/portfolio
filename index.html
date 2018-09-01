@@ -1,44 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  <head>
 
-    <!-- Start of Async Drift Code -->
-<script>
-    "use strict";
-    
-    !function() {
-      var t = window.driftt = window.drift = window.driftt || [];
-      if (!t.init) {
-        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-        t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-        t.factory = function(e) {
-          return function() {
-            var n = Array.prototype.slice.call(arguments);
-            return n.unshift(e), t.push(n), t;
-          };
-        }, t.methods.forEach(function(e) {
-          t[e] = t.factory(e);
-        }), t.load = function(t) {
-          var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-          var i = document.getElementsByTagName("script")[0];
-          i.parentNode.insertBefore(o, i);
-        };
-      }
-    }();
-    drift.SNIPPET_VERSION = '0.3.1';
-    drift.load('ypgey7zekmhf');
-    </script>
-    <!-- End of Async Drift Code -->
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:image" content="img/thumbnail.jpg"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://ninoslav.snylabs.com/"/>
-    <meta property="og:title" content="Ninoslav Stankovic | Web Developer & Designer" />
-    <meta property="og:description" content="Hello, my name is Ninoslav, I'm 27 years old, and I'm a self-taught Web Developer and Designer. Proficient in HTML, CSS and SASS. I also have knowledge of JavaScript, WordPress, Bootstrap, BEM, PostCSS, etc." />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124190295-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-124190295-1');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="img/thumbnail.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ninoslav.snylabs.com/" />
+  <meta property="og:title" content="Ninoslav Stankovic | Web Developer & Designer" />
+  <meta property="og:description" content="Hello, my name is Ninoslav, I'm 27 years old, and I'm a self-taught Web Developer and Designer. Proficient in HTML, CSS and SASS. I also have knowledge of JavaScript, WordPress, Bootstrap, BEM, PostCSS, etc."
+  />
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
   <!-- Bulma -->
@@ -64,6 +45,20 @@
 </head>
 
 <body id="home">
+
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>(function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your customer chat code -->
+  <div class="fb-customerchat" attribution=setup_tool page_id="193889561295762">
+  </div>
 
   <div class="overlay">
     &nbsp;
@@ -106,8 +101,6 @@
       <div class="header__logo">
         <img src="img/logo.png" alt="Logo" class="header__logo header__logo-img">
       </div>
-
-      <h2 class="header__brand-heading">snazzoid</h2>
     </div>
 
     <div class="header__text-box">
@@ -198,17 +191,17 @@
             </div>
           </div>
           <div class="column">
+            <div class="tech-box">
+              <i class="tech-box__icon fab fa-react"></i>
+              <h3 class="tertiary-heading u-margin-bottom-small">React</h3>
+              <p class="tech-box__text">Because it's awesome.</p>
+            </div>
+          </div>
+          <div class="column">
             <div class="tech-box tech-box--5">
               <i class="tech-box__icon fab fa-wordpress-simple"></i>
               <h3 class="tertiary-heading u-margin-bottom-small">WordPress</h3>
               <p class="tech-box__text">Open source software used for creating beautiful websites, blogs, or apps.</p>
-            </div>
-          </div>
-          <div class="column">
-            <div class="tech-box">
-              <i class="tech-box__icon fab fa-searchengin"></i>
-              <h3 class="tertiary-heading u-margin-bottom-small">SEO</h3>
-              <p class="tech-box__text">Because Google only loves you when everyone loves you first.</p>
             </div>
           </div>
         </div>
@@ -257,6 +250,30 @@
             <div class="column u-margin-bottom-large">
               <div class="panel">
                 <div class="panel__side panel__side--front">
+                  <div class="panel__image panel__image--1">
+                    &nbsp;
+                  </div>
+                  <div class="panel__details">
+                    <div class="panel__bg u-margin-bottom-medium">
+                      <p class="panel__text panel__text--1">Bumpit Solutions</p>
+                    </div>
+
+                    <div class="panel__text-box u-margin-bottom-medium">
+                      Fictional company website.
+                    </div>
+
+                    <a href="https://snazzydev.github.io/bumpit/" target="_blank" class="btn btn--gradient btn--gradient-1">Visit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 3 -->
+          <div class="column">
+            <div class="column u-margin-bottom-large">
+              <div class="panel">
+                <div class="panel__side panel__side--front">
                   <div class="panel__image panel__image--2">
                     &nbsp;
                   </div>
@@ -279,7 +296,7 @@
 
         <div class="columns">
 
-          <!-- Panel 3 -->
+          <!-- Panel 4 -->
           <div class="column">
             <div class="column u-margin-bottom-large">
               <div class="panel">
@@ -289,21 +306,21 @@
                   </div>
                   <div class="panel__details">
                     <div class="panel__bg u-margin-bottom-medium">
-                      <p class="panel__text panel__text--1">Gridify</p>
+                      <p class="panel__text panel__text--1">Pig Game</p>
                     </div>
 
                     <div class="panel__text-box u-margin-bottom-medium">
-                      Digital artist portfolio made with a focus on CSS Grid.
+                      Simple Pig Game created with vanilla JS.
                     </div>
 
-                    <a href="#" class="btn btn--gradient btn--gradient-1">comming soon</a>
+                    <a href="#" class="btn btn--gradient btn--gradient-1">Visit</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Panel 4 -->
+          <!-- Panel 5 -->
           <div class="column">
             <div class="column u-margin-bottom-large">
               <div class="panel">
@@ -320,7 +337,32 @@
                       Playing around with Wordpress.
                     </div>
 
-                    <a href="#" class="btn btn--gradient btn--gradient-1">Coming soon</a>
+                    <a href="#" class="btn btn--gradient btn--gradient-1">Visit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 6 -->
+
+          <div class="column">
+            <div class="column u-margin-bottom-large">
+              <div class="panel">
+                <div class="panel__side panel__side--front">
+                  <div class="panel__image panel__image--4">
+                    &nbsp;
+                  </div>
+                  <div class="panel__details">
+                    <div class="panel__bg u-margin-bottom-medium">
+                      <p class="panel__text panel__text--1">Wordpress</p>
+                    </div>
+
+                    <div class="panel__text-box u-margin-bottom-medium">
+                      Playing around with Wordpress.
+                    </div>
+
+                    <a href="#" class="btn btn--gradient btn--gradient-1">Visit</a>
                   </div>
                 </div>
               </div>
@@ -421,6 +463,12 @@
             <a href="https://www.linkedin.com/in/ninoslav-stankovic/" class="footer__link" target="_blank">
               <i class="fab fa-linkedin-in footer__icon"></i>
             </a>
+            <a href="https://www.behance.net/snazzydev" class="footer__link" target="_blank">
+              <i class="fab fa-behance footer__icon"></i>
+            </a>
+            <a href="https://m.me/snazzoid" class="footer__link" target="_blank">
+              <i class="fab fa-facebook-messenger footer__icon"></i>
+            </a>
           </div>
         </div>
         <div class="column">
@@ -441,7 +489,7 @@
     </div>
   </footer>
 
-    <script src="js/typed.js"></script>
+  <script src="js/typed.js"></script>
   <script src="js/main.js"></script>
 </body>
 

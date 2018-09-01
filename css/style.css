@@ -314,9 +314,11 @@ html {
     .panel__image--2 {
       background-image: url(../img/serenity.jpg); }
     .panel__image--3 {
-      background-image: url(../img/artist.png); }
+      background-image: url(../img/pig_game.png);
+      background-position: center; }
     .panel__image--4 {
-      background-image: url(../img/wordpress.png); }
+      background-image: url(../img/wordpress.png);
+      background-position: center; }
   .panel__bg {
     background-color: #29323c;
     display: inline-block;
@@ -529,7 +531,6 @@ html {
   background-color: #f7f7f7;
   background-image: linear-gradient(60deg, #29323c, rgba(86, 67, 250, 0.9)), url(../img/ver7.png);
   background-position: bottom;
-  background-attachment: fixed;
   text-align: center;
   text-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
   margin-top: -10rem;
@@ -589,7 +590,6 @@ html {
   background-image: linear-gradient(60deg, #29323c, rgba(86, 67, 250, 0.8)), url(../img/hero_opt.jpg);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh); }
   @media (max-width: 37.5em) {
@@ -678,8 +678,7 @@ html {
   padding: 10rem 0;
   background-image: linear-gradient(60deg, #29323c, rgba(86, 67, 250, 0.9)), url(../img/ver7.png);
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed; }
+  background-position: center; }
 
 .section-work {
   background-color: #f7f7f7;
