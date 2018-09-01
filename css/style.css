@@ -312,6 +312,9 @@ html {
     clip-path: ellipse(420px 160px at 50% 30%);
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s; }
+    @media (max-width: 37.5em) {
+      .panel__image {
+        opacity: 1; } }
     @media (max-width: 1200px) {
       .panel__image {
         -webkit-clip-path: ellipse(1200px 160px at 50% 30%);
@@ -321,17 +324,17 @@ html {
     .panel__image--2 {
       background-image: url(../img/serenity.jpg); }
     .panel__image--3 {
-      background-image: url(../img/pig_game.png);
+      background-image: url(../img/pig_game.jpg);
       background-position: center; }
     .panel__image--4 {
-      background-image: url(../img/trillo.png);
+      background-image: url(../img/trillo.jpg);
       background-position: center; }
     .panel__image--5 {
-      background-image: url(../img/wordpress.png);
+      background-image: url(../img/wordpress.jpg);
       background-position: center; }
     .panel__image--6 {
-      background-image: url(../img/community.png);
-      background-position: center; }
+      background-image: url(../img/community.jpg);
+      background-position: bottom; }
   .panel__bg {
     background-color: #29323c;
     display: inline-block;
@@ -357,7 +360,7 @@ html {
     margin-top: 3rem;
     text-align: center; }
   .panel__text-box {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     margin-bottom: 3rem;
     color: #29323c; }
 
@@ -546,7 +549,7 @@ html {
 
 .footer {
   background-color: #f7f7f7;
-  background-image: linear-gradient(60deg, #29323c, rgba(86, 67, 250, 0.9)), url(../img/ver7.png);
+  background-image: linear-gradient(60deg, #29323c, rgba(86, 67, 250, 0.9)), url(../img/ver7.jpg);
   background-position: bottom;
   text-align: center;
   text-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
@@ -693,7 +696,7 @@ html {
 .section-tech {
   margin-top: -10vh;
   padding: 10rem 0;
-  background-image: linear-gradient(60deg, #29323c, rgba(86, 67, 250, 0.9)), url(../img/ver7.png);
+  background-image: linear-gradient(60deg, #29323c, rgba(86, 67, 250, 0.9)), url(../img/ver7.jpg);
   background-size: cover;
   background-position: center; }
 
@@ -710,6 +713,12 @@ html {
   @media (max-width: 37.5em) {
     .section-mindset {
       padding: 8rem 2rem; } }
+  @media (max-width: 56.25em) {
+    .section-mindset {
+      padding: 8rem 4rem; } }
+  @media (max-width: 1200px) {
+    .section-mindset {
+      padding: 8rem 4rem; } }
 
 .mindset-column {
   display: -webkit-box;
@@ -732,7 +741,8 @@ html {
     margin-left: 20rem; }
     @media (max-width: 37.5em) {
       .mindset-image--1 {
-        margin: 0 auto; } }
+        margin: 0 auto;
+        display: none; } }
   @media (max-width: 37.5em) {
     .mindset-image--2 {
       margin: 0 auto;
@@ -742,4 +752,5 @@ html {
     @media (max-width: 37.5em) {
       .mindset-image--3 {
         margin: 0 auto;
-        margin-bottom: 3rem; } }
+        margin-bottom: 3rem;
+        display: none; } }
