@@ -18,8 +18,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://ninoslav.snylabs.com/" />
   <meta property="og:title" content="Ninoslav Stankovic | Web Developer & Designer" />
-  <meta property="og:description" content="Hello, my name is Ninoslav, I'm 27 years old, and I'm a self-taught Web Developer and Designer. Proficient in HTML, CSS and SASS. I also have knowledge of JavaScript, WordPress, Bootstrap, BEM, PostCSS, etc."
-  />
+  <meta property="og:description" content="Hello, my name is Ninoslav, I'm 27 years old, and I'm a self-taught Web Developer and Designer. Proficient in HTML, CSS and SASS. I also have knowledge of JavaScript, WordPress, Bootstrap, BEM, PostCSS, etc." />
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
   <!-- Bulma -->
@@ -65,7 +64,7 @@
   </div>
 
   <!-- NAVIGATION -->
-  <div class="menu-bg">&nbsp;</div>
+  <!-- <div class="menu-bg">&nbsp;</div> -->
   <div class="menu-btn">
     <div class="btn-line"></div>
     <div class="btn-line"></div>
@@ -96,21 +95,15 @@
 
   <header class="header">
 
-    <div class="header__brand-box">
 
-      <div class="header__logo">
-        <img src="img/logo.png" alt="Logo" class="header__logo header__logo-img">
-      </div>
-    </div>
 
     <div class="header__text-box">
       <h1 class="primary-heading">
         <span class="primary-heading--top">
           <span class='primary-heading--top-2'>Hello,</span>
-          I'm
-          <span class="type primary-heading--top-1"></span>.
+          I'm Ninoslav.
         </span>
-        <span class="primary-heading--bottom">I'm a Web Developer and Designer in the making, pushing myself daily to new
+        <span class="primary-heading--bottom">I'm a Web Developer and Designer, pushing myself daily to new
           knowledge and skills.</span>
       </h1>
       <a href="#work" class="btn btn--white">see my work</a>
@@ -132,12 +125,14 @@
             <div class="panel__bg u-margin-bottom-medium">
               <h2 class="panel__text panel__text--1">About Me</h2>
             </div>
-            <p class="text u-margin-bottom-medium">Hello, my name is Ninoslav, I'm 27 years old, and I'm a Web Developer
-              and Designer. Constantly learning on a daily basis, proficient in HTML, CSS and SASS. I also have knowledge
-              of JavaScript, WordPress, Bootstrap, SEO. I strive for a level headed and rational approach to problem-solving
+            <p class="text u-margin-bottom-medium">Hello, my name is Ninoslav, I'm 27 years old, and I'm a Web
+              Developer
+              and Designer. Constantly learning on a daily basis, mainly HTML, CSS, SASS and JavaScript. I also have
+              knowledge
+              of WordPress, Bootstrap, Git, . I strive for a level headed and rational approach to
+              problem-solving
               with a passion for innovative and industry aware ideas. I live and breath technology.
             </p>
-            <a href="#mindset" class="btn btn--gradient btn--gradient-1">Discover More</a>
           </div>
           <div class="column section-about__column-2">
             &nbsp;
@@ -166,7 +161,8 @@
             <div class="tech-box">
               <i class="tech-box__icon fab fa-css3"></i>
               <h3 class="tertiary-heading u-margin-bottom-small">CSS</h3>
-              <p class="tech-box__text">Cascading Style Sheets are often overlooked in Web Development. Too bad, I just love
+              <p class="tech-box__text">Cascading Style Sheets are often overlooked in Web Development. Too bad, I just
+                love
                 them.
               </p>
             </div>
@@ -378,66 +374,16 @@
       </div>
     </section>
 
-    <!-- SECTION -->
-
-    <section class="section-mindset" id="mindset">
-      <div class="container">
-
-        <div class="columns u-margin-bottom-large">
-          <div class="column">
-            <h3 class="secondary-heading u-margin-bottom-medium">
-              Level-headed aproach
-            </h3>
-            <p class="text">Plan, plan, plan.. You can never have too many. A clear vision, backed by definite plans, gives
-              you a tremendous feeling of confidence for the job at hand.</p>
-          </div>
-          <div class="column mindset-column">
-            <img src="img/person.png" alt="" class="mindset-image mindset-image--1">
-          </div>
-        </div>
-
-        <div class="columns u-margin-bottom-large">
-          <div class="column mindset-column">
-            <img src="img/speech-bubble.png" alt="" class="mindset-image mindset-image--2">
-          </div>
-          <div class="column">
-            <h3 class="secondary-heading u-margin-bottom-medium">
-              Communication
-            </h3>
-            <p class="text">Because good communication is the bridge between confusion and clarity. We slow each other down
-              If we're not on the same page. So let's talk as much as possible.</p>
-          </div>
-
-        </div>
-
-        <div class="columns">
-          <div class="column">
-            <h3 class="secondary-heading u-margin-bottom-medium">
-              Dream Big
-            </h3>
-            <p class="text">Without big goals, there's no big plans. So just dream it, wish it, and work hard until you get
-              it. Simple formula.</p>
-          </div>
-          <div class="column mindset-column">
-            <img src="img/arrow.png" alt="" class="mindset-image mindset-image--3">
-          </div>
-        </div>
-
-
-
-      </div>
-    </section>
-
   </main>
 
   <!-- FOOTER -->
 
   <footer class="footer" id="contact">
-    <div class="footer__logo u-margin-bottom-large">
+    <!-- <div class="footer__logo u-margin-bottom-large">
       <a href="#home">
         <img src="img/logo.png" alt="Logo">
       </a>
-    </div>
+    </div> -->
     <div class="container">
       <div class="columns">
         <div class="column">
@@ -496,6 +442,26 @@
 
   <script src="js/typed.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: '578854639147268',
+        autoLogAppEvents: true,
+        xfbml: true,
+        version: 'v2.12'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) { return; }
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <div class="fb-customerchat" page_id="1534381036606223"></div>
 </body>
 
 </html>

@@ -46,12 +46,12 @@ function clearMenu() {
 // TYPED JS
 // ------------------
 
-var typed = new Typed(".type", {
-    strings: ["the snazzy_dev", "Ninoslav", "glad you\'re here"],
-    typeSpeed: 50,
-    backSpeed: 50,
-    loop: true
-});
+// var typed = new Typed(".type", {
+//     strings: ["the snazzy_dev", "Ninoslav", "glad you\'re here"],
+//     typeSpeed: 50,
+//     backSpeed: 50,
+//     loop: true
+// });
 
 
 // ------------------
