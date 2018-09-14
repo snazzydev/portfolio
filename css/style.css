@@ -535,7 +535,7 @@ html {
     background-size: 250%; }
     @media (max-width: 37.5em) {
       .menu .nav-link {
-        font-size: 2.3rem; } }
+        font-size: 1.8rem; } }
     .menu .nav-link:hover {
       color: #28b485;
       -webkit-transform: translateX(2rem);
@@ -595,8 +595,11 @@ html {
 .header {
   position: relative;
   height: 95vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#28b485), to(rgba(126, 213, 111, 0.8)));
-  background-image: linear-gradient(to right bottom, #28b485, rgba(126, 213, 111, 0.8));
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#28b485), color-stop(rgba(126, 213, 111, 0.8)), to(url("../img/coding.jpg")));
+  background-image: linear-gradient(to right bottom, #28b485, rgba(126, 213, 111, 0.8), url("../img/coding.jpg"));
+  background-image: -webkit-gradient(linear, left top, right top, from(#28b485), to(rgba(126, 213, 111, 0.8))), url(../img/coding.jpg);
+  background-image: linear-gradient(to right, #28b485, rgba(126, 213, 111, 0.8)), url(../img/coding.jpg);
+  background-size: cover;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80vh); }
   @media (max-width: 37.5em) {
