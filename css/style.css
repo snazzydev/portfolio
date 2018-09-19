@@ -311,13 +311,14 @@ html {
   .panel__image {
     background-size: cover;
     height: 25rem;
-    opacity: 0.5;
-    -webkit-clip-path: ellipse(420px 160px at 50% 30%);
-    clip-path: ellipse(420px 160px at 50% 30%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-    -webkit-transition: opacity 0.2s;
-    transition: opacity 0.2s; }
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
     @media (max-width: 37.5em) {
       .panel__image {
         opacity: 1; } }
@@ -339,7 +340,7 @@ html {
       background-image: url(../img/wordpress.jpg);
       background-position: center; }
     .panel__image--6 {
-      background-image: url(../img/community.jpg);
+      background-image: url(../img/digital_artist.png);
       background-position: bottom; }
   .panel__bg {
     background-image: -webkit-gradient(linear, left top, right bottom, from(#28b485), to(rgba(126, 213, 111, 0.8)));
@@ -372,7 +373,8 @@ html {
     color: #29323c; }
 
 .panel:hover .panel__image {
-  opacity: 1; }
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0); }
 
 .tech-box {
   font-family: "Ubuntu", sans-serif;
